@@ -27,7 +27,6 @@
     padding-bottom: .25rem !important;
 }
 .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -45,6 +44,7 @@
     text-decoration: none;
 }
 body {
+    margin: 0%;
     font-family: var(--bs-body-font-family);
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
@@ -55,9 +55,6 @@ body {
 }
 .p-md-5 {
     padding: 3rem !important;
-}
-.m-md-3 {
-    margin: 1rem !important;
 }
 .bg-light {
     --bs-bg-opacity: 1;
@@ -77,10 +74,6 @@ body {
 }
 .p-lg-5 {
     padding: 3rem !important;
-}
-.my-5 {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
 }
 .mx-auto {
     margin-right: auto !important;
@@ -103,13 +96,35 @@ body {
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 0;
     font-weight: 500;
     line-height: 1.2;
 }
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
+}
+a:hover {
+    border-bottom: 3px solid var(--bs-gray-500);
+  }
+  
+a.active {
+    border-bottom: 3px solid var(--bs-gray-500);
+}
+/* Style the search box inside the navigation bar */
+input[type=text] {
+    float: none;
+    width: 90%;
+    padding: 6px;
+    border: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 17px;
+  }
+.m-1-p {
+    margin: 1%;
 }
 :root {
     --bs-blue: #0d6efd;
