@@ -104,11 +104,11 @@ body {
     font-size: 1.25rem;
     font-weight: 300;
 }
-a:hover {
+nav a:hover {
     border-bottom: 3px solid var(--bs-gray-500);
   }
   
-a.active {
+nav a.active {
     border-bottom: 3px solid var(--bs-gray-500);
 }
 /* Style the search box inside the navigation bar */
